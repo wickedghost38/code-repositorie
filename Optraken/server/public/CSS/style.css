@@ -1,0 +1,397 @@
+/*alles*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    margin: 0px;
+}
+.standaard{
+    padding: 1rem;
+}
+/*navbar*/
+nav {
+    font-size: 2vw;
+    background-color: #83b378;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.navitems {
+    display: flex;
+    align-items: center;
+}
+.navitems > a {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.nav {
+    color:rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+    transition: 0.2s ease; 
+    transform: scale(1);
+    text-align: center;
+}
+.nav:hover{
+    transform: scale(1.02);
+    color: black;
+}
+.navimg{
+    margin: 10px 0px 5px 0px ;
+    height: 50px;
+}
+.vlag{
+    height: 45px;
+    display: inline;
+    margin-right: 15px;
+    transition: 0.3s ease;
+}
+.vlag:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 12px;
+    text-decoration: none;
+}
+
+/*homepage*/
+.logo{
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Limg {
+    flex-grow: 1;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+
+}
+.body{
+    margin: 5%;
+    margin-top: 0px;
+}
+.a{
+    background-color: darkgray;
+    padding: 15px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    flex-grow: 1;
+    color: black;
+    text-decoration: none;
+    min-width: 250px;
+    box-shadow: rgba(72, 72, 72, 0.2) 0px 8px 24px;
+    transition: 0.3s ease;
+    transform: scale(1);
+}
+.a:hover{
+    color: black;
+    background-color: #83b271;
+    box-shadow: rgba(72, 72, 72, 0.35) 0px 8px 24px;
+    transform: scale(1.02);
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+/*beeldhouw */
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(245, 242, 239);
+    margin-bottom: 15px;
+}
+#mol {
+    width: 50%;
+}
+.intro {
+    width: 30%;
+    font-size: 1.5vw;
+    color: #555555;
+    line-height: 1.8;
+    position: relative;
+    left: 10%;
+}
+.column {
+    column-count: 5; 
+    column-gap: 30px; 
+    max-width: 100%; 
+    margin: 0 auto;
+    text-align: center;
+}
+.thumbnail {
+    break-inside: avoid;
+    margin-bottom: 40px;
+    border: 2px solid none;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    max-width: 100%;
+    background-color: gray;
+    font-size: medium;
+}
+.prijs {
+    color: transparent;
+    position: absolute;
+    top: 8px;
+    right: 9px;
+    transition: 0.3s ease;
+    font-weight: bold;
+    font-size: large;
+}
+.position {
+    position: relative;
+    text-align: center;
+}
+.thumbnail:hover .prijs {
+    color: white;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0); 
+}
+.img {
+    width: 100%;
+
+}
+
+@media screen and (min-width: 0px) {
+    .column {
+        column-count: 1;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .column {
+        column-count: 2;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .column {
+        column-count: 3;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .column {
+        column-count: 4;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .column {
+        column-count: 5;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .column {
+        column-count: 7;
+    }
+}
+
+/*frankrijkhuis*/
+ .welkom, .winter, .zomer, .apartament, .info{
+    color: black;
+    font-size: 24px;
+    font-style: light;
+}
+
+ .winter{
+    padding-top: 10px;
+}
+
+.imgf1{
+    display: flex;
+   padding-left: 800px;
+   height: 508px;
+   width: 652px;
+}
+
+.imgf2{
+    display: flex;
+    width: 1455px;
+    height: 478px;
+}
+
+.imgf3{
+    display: flex;
+    padding-left: 560px;
+    height: 508px;
+    width: 652px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: absolute;
+  margin: auto;
+  left: 550px;
+  align-items: middle;
+  box-sizing: border-box;
+}
+
+.dot {
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 5.0s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
+/*texel*/
+.texel{
+    width: 100%;
+    
+}
+.fotos{
+    column-count: 4; 
+    column-gap: 8px; 
+    max-width: 100%; 
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.foto{
+    
+    break-inside: avoid;
+    margin-bottom: 40px;
+    border: 2px solid none;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    max-width: 100%;
+    background-color: gray;
+    font-size: medium;
+}
+
+@media screen and (min-width: 0px) {
+    .fotos {
+        column-count: 1;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .fotos {
+        column-count: 2;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .fotos {
+        column-count: 3;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .fotos {
+        column-count: 4;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .fotos {
+        column-count: 5;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .fotos {
+        column-count: 7;
+    }
+}
+
+
+/*verhaal*/
+.verhalen {
+    display: flex;
+    justify-content: center;
+    font-size: 160px;
+}
+
+
+.b {
+    background-color: darkgray;
+    padding: 15px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    color: black;
+    text-decoration: none;
+    max-width: 370px;
+    box-shadow: rgba(72, 72, 72, 0.2) 0px 8px 24px;
+    transition: 0.3s ease;
+    transform: scale(1);
+    flex-grow: 1;
+    flex-wrap: wrap;
+    background-position: center;
+    background-size: cover;
+}
+.b:hover {
+    color: black;
+    background-color: #83b271;
+    box-shadow: rgba(72, 72, 72, 0.35) 0px 8px 24px;
+    transform: scale(1.02);
+}
+.vitems{
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+/*verhalen apart*/
+.verhaal{
+    font-size: 2vw;
+    background-color: #83b378;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.vfoto {
+    width: 400px;
+}
+.footer{
+    margin-top: auto;
+}
+.layout{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.content{
+    width: 100%;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    box-sizing: border-box;
+    align-self: center;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+}
+
+.tekst3{
+    padding: 10px;
+}
