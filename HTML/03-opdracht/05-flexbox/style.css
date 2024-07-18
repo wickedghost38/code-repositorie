@@ -1,0 +1,33 @@
+.navbar{
+    display: flex;
+    justify-content:space-around;
+    background-color: purple;
+}
+
+.news:first-child{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.news{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.news:last-child{
+    display: flex;
+    
+}
